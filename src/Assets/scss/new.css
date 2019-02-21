@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "AbeeZee";
+}
+
+.App {
+  position: relative;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 1.3rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+.header .logo {
+  text-decoration: none;
+  color: #0C5991;
+  font-size: 1.7rem;
+  font-family: "Architects Daughter";
+  font-weight: bolder;
+  transition: 150ms;
+}
+.header .logo:hover {
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  transition: 150ms;
+}
+.header .header-links {
+  float: right;
+  position: relative;
+  top: 0.5rem;
+}
+.header .header-links a:not(:last-child) {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  transition: 150ms;
+}
+.header .header-links a:hover {
+  color: #0C5991;
+  transition: 150ms;
+}
+.header .header-links a:last-child {
+  text-decoration: none;
+  padding: 1rem;
+  border: 2px solid #0C5991;
+  color: #0C5991;
+}
+.header .header-links a:last-child:hover {
+  color: white;
+  background: #0C5991;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=new.css.map */
