@@ -3,39 +3,98 @@ body {
   font-family: "AbeeZee";
 }
 
-.App {
-  position: relative;
-}
-
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 1.3rem;
   background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  z-index: 5000;
+}
+.header .pricing-list {
+  position: fixed;
+  top: 5rem;
+  right: 1.6rem;
+  width: 44rem;
+  height: 25rem;
+  background: #222222;
+  border: 4px solid #0C5991;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 200ms;
+}
+.header .pricing-list .pricing-list-part {
+  position: relative;
+  float: left;
+  width: 20rem;
+  padding: 1rem;
+  height: 23rem;
+  background: #222222;
+  text-align: center;
+}
+.header .pricing-list .pricing-list-part h3 {
+  color: white;
+  font-weight: lighter;
+}
+.header .pricing-list .pricing-list-part h1, .header .pricing-list .pricing-list-part h4 {
+  color: #0C5991;
+  text-shadow: 1px 1px 1px #000000;
+}
+.header .pricing-list .pricing-list-part .line {
+  width: 15rem;
+  height: 2px;
+  background: white;
+  margin: auto;
+}
+.header .pricing-list .pricing-list-part ul li {
+  color: white;
+}
+.header .pricing-list::after, .header .pricing-list::before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.header .pricing-list:after {
+  border-color: transparent;
+  border-bottom-color: #222222;
+  border-width: 20px;
+  margin-left: -20px;
+}
+.header .pricing-list:before {
+  border-color: transparent;
+  border-bottom-color: #0C5991;
+  border-width: 26px;
+  margin-left: -26px;
 }
 .header .logo {
   text-decoration: none;
   color: #0C5991;
   font-size: 1.7rem;
   font-family: "Architects Daughter";
+  text-shadow: 1px 2px 2px black;
   font-weight: bolder;
   transition: 150ms;
 }
 .header .logo:hover {
-  text-shadow: 1px 2px 2px black;
   color: white;
   transition: 150ms;
 }
 .header .header-links {
   float: right;
   position: relative;
-  top: 0.5rem;
+  top: 0.6rem;
+  right: 2.6rem;
 }
 .header .header-links a:not(:last-child) {
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-right: 2rem;
   padding: 0.5rem;
   transition: 150ms;
@@ -47,13 +106,89 @@ body {
 .header .header-links a:last-child {
   text-decoration: none;
   padding: 1rem;
+  font-size: 0.9rem;
   border: 2px solid #0C5991;
-  color: #0C5991;
-}
-.header .header-links a:last-child:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
   color: white;
   background: #0C5991;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+.header .header-links a:last-child:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.Backg1Component {
+  position: relative;
+  top: 0;
+  margin: 0;
+  height: 39rem;
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/Assets/images/background_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Backg1Component .content {
+  position: relative;
+  top: 5rem;
+}
+.Backg1Component .content .logo-img {
+  width: 24rem;
+  height: 24rem;
+}
+.Backg1Component .content table {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 2rem;
+}
+.Backg1Component .content .content-data {
+  position: relative;
+  padding: 1rem;
+  top: -2rem;
+}
+.Backg1Component .content .content-data .headlogo {
+  font-family: "Architects Daughter";
+  text-shadow: 1px 2px 2px black;
+  color: #0c5991;
+  width: 100%;
+  font-size: 2.4rem;
+}
+.Backg1Component .content .content-data h4 {
+  color: white;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px black;
+}
+.Backg1Component .content .content-data .server {
+  width: 100%;
+}
+.Backg1Component .content .content-data .server h5 {
+  position: relative;
+  display: inline-block;
+  line-height: 0.1rem;
+  margin-right: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.Backg1Component .content .content-data .server h5:hover {
+  color: #0C5991;
+}
+.Backg1Component .content .content-data .getStarted {
+  position: relative;
+  top: 2.5rem;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #0C5991;
+  background: #0C5991;
+  transition: 150ms;
+  box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.8);
+}
+.Backg1Component .content .content-data .getStarted:hover {
+  transition: 150ms;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #0c5991;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=new.css.map */
