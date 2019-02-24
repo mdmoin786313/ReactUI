@@ -116,79 +116,23 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.Backg1Component {
+.contentTop {
   position: relative;
   top: 0;
   margin: 0;
   height: 39rem;
-  padding: 1rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/Assets/images/background_1.jpg");
+  padding: 0.6rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-repeat: no-repeat;
   background-size: cover;
 }
-.Backg1Component .content {
+.contentTop table {
   position: relative;
-  top: 5rem;
-}
-.Backg1Component .content .logo-img {
-  width: 24rem;
-  height: 24rem;
-}
-.Backg1Component .content table {
-  width: 100%;
-  margin: auto;
-  position: relative;
-  top: 2rem;
-}
-.Backg1Component .content .content-data {
-  position: relative;
-  padding: 1rem;
-  top: -2rem;
-}
-.Backg1Component .content .content-data .headlogo {
-  font-family: "Architects Daughter";
-  text-shadow: 1px 2px 2px black;
-  color: #0c5991;
-  width: 100%;
-  font-size: 2.4rem;
-}
-.Backg1Component .content .content-data h4 {
-  color: white;
-  font-weight: lighter;
-  text-shadow: 1px 1px 1px black;
-}
-.Backg1Component .content .content-data .server {
+  top: 7rem;
   width: 100%;
 }
-.Backg1Component .content .content-data .server h5 {
-  position: relative;
-  display: inline-block;
-  line-height: 0.1rem;
-  margin-right: 1rem;
-  color: white;
-  cursor: pointer;
-  font-weight: lighter;
-}
-.Backg1Component .content .content-data .server h5:hover {
-  color: #0C5991;
-}
-.Backg1Component .content .content-data .getStarted {
-  position: relative;
-  top: 2.5rem;
-  padding: 1.5rem 2rem;
-  text-decoration: none;
-  color: white;
-  border: 2px solid #0C5991;
-  background: #0C5991;
-  transition: 150ms;
-  box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.8);
-}
-.Backg1Component .content .content-data .getStarted:hover {
-  transition: 150ms;
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #0c5991;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+.contentTop table tr td {
+  width: 50%;
 }
 
 /*# sourceMappingURL=new.css.map */
